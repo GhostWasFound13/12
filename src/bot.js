@@ -69,3 +69,6 @@ client.login(process.env.token).then(() => {
     loadCommands(client);
     loadComponents(client);
 })
+process.on('unhandledRejection', error => {     
+console.error('Error has been handler!'); 
+});
